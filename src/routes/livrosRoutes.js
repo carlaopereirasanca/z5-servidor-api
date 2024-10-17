@@ -9,5 +9,7 @@ const routes = express.Router();
 
 routes.get("/livros", LivroController.listarLivros);
 
+routes.post("/livros", LivroController.cadastrarLivro);
+
 export default routes;
 
